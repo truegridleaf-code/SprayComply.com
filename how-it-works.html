@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>How It Works: 3-Step Texas Pesticide Spray Logging & Audit Prep - SprayComply</title>
+  <meta name="description" content="See how Texas pest control operators achieve audit immunity in 3 simple steps: 5-minute chemical vault setup, 25-second field spray logs, and 1-click TDA Form Q527 export.">
+  <meta name="keywords" content="how pesticide spray logging works, Texas TDA spray log workflow, mobile pesticide recordkeeping steps, fast spray logging app, pest control sidecar software">
+  <meta name="author" content="SprayComply">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.spraycomply.com/how-it-works.html">
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SprayComply">
+  <meta property="og:title" content="How It Works: 3-Step Texas Pesticide Spray Logging & Audit Prep - SprayComply">
+  <meta property="og:description" content="See how Texas pest control operators achieve audit immunity in 3 simple steps: 5-minute chemical vault setup, 25-second field spray logs, and 1-click TDA Form Q527 export.">
+  <meta property="og:url" content="https://www.spraycomply.com/how-it-works.html">
+  <meta property="og:image" content="https://www.spraycomply.com/hero_technician.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@spraycomply">
+  <meta name="twitter:title" content="How It Works: 3-Step Texas Pesticide Spray Logging & Audit Prep - SprayComply">
+  <meta name="twitter:description" content="See how Texas pest control operators achieve audit immunity in 3 simple steps: 5-minute chemical vault setup, 25-second field spray logs, and 1-click TDA Form Q527 export.">
+  <meta name="twitter:image" content="https://www.spraycomply.com/hero_technician.jpg">
+
+    <!-- Favicon & Brand Icons -->
+    <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
+    <link rel="apple-touch-icon" href="logo-icon.svg">
+    <link rel="mask-icon" href="logo-icon.svg" color="#0D9488">
+    <meta name="theme-color" content="#0D9488">
+
+    <!-- JSON-LD HowTo & WebPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Log Pesticide Sprays in 25 Seconds with SprayComply",
+      "description": "A 3-step workflow for Texas pest control operators to log sprays and generate TDA Form Q527 compliant PDF records.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Set Up Roster and Chemical Vault",
+          "text": "Enter TDA applicator license numbers and pick default chemicals from preloaded EPA formulations."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "25-Second Rapid Mobile Field Log",
+          "text": "Tap customer address, auto-fetch NOAA wind and temperature data via GPS, and record dosage in 3 taps."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "1-Click TDA Form Q527 PDF Export",
+          "text": "Export certified, audit-ready PDF logs instantly whenever state inspectors request records."
+        }
+      ]
+    }
+    </script>
+ 
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   <!-- Tailwind CSS Play CDN for Responsive Breakpoints (sm, md, lg, xl, 2xl) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#0D9488', hover: '#0F766E', dark: '#0A5E55', light: '#CCFBF1', 50: '#F0FDFA' },
+            accent: { DEFAULT: '#F59E0B', hover: '#D97706' }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+ <style>
+   .step-cards { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-top: 3rem; }
+   .step-card { background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); position: relative; }
+   .step-number { position: absolute; top: -1.5rem; left: 2rem; background: var(--primary); color: white; width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; font-weight: bold; border-radius: 50%; border: 4px solid white; }
+   .comparison-table { width: 100%; border-collapse: collapse; background: white; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+   .comparison-table th, .comparison-table td { padding: 1.5rem; text-align: center; border-bottom: 1px solid var(--gray-200); }
+   .comparison-table th:first-child, .comparison-table td:first-child { text-align: left; font-weight: 600; }
+   .comparison-table th { background: var(--gray-50); font-weight: 700; }
+   .comparison-table tr:last-child td { border-bottom: none; }
+   .table-wrap { overflow-x: auto; margin-top: 3rem; }
+   .faq-list { max-width: 800px; margin: 0 auto; display: grid; gap: 1.5rem; }
+   .faq-item { background: white; padding: 1.5rem; border-radius: 0.5rem; border: 1px solid var(--gray-200); }
+   .faq-item h4 { margin-top: 0; margin-bottom: 0.5rem; color: var(--text-dark); }
+   .faq-item p { margin-bottom: 0; color: var(--text-muted); }
+   .icon-check { color: #10B981; }
+   .icon-cross { color: #EF4444; }
+ </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+<header role="banner">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+ <div class="container">
+    <a href="index.html" class="nav-logo">
+   <svg width="34" height="34" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="navShield" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#14B8A6"/>
+        <stop offset="50%" stop-color="#0D9488"/>
+        <stop offset="100%" stop-color="#0F766E"/>
+      </linearGradient>
+    </defs>
+    <path d="M32 6 C23 16 14 26 14 37 C14 47.5 22 56 32 58 C42 56 50 47.5 50 37 C50 26 41 16 32 6 Z" fill="url(#navShield)"/>
+    <path d="M32 12 C25 20 18 28.5 18 37 C18 44.5 24.2 51.5 32 53.5 C30 50 24 43 24 36 C24 28 30 20 32 12 Z" fill="#5EEAD4" opacity="0.35"/>
+    <path d="M22 36 L28.5 42.5 L43 26" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="43.5" cy="18.5" r="2.5" fill="#34D399"/>
+   </svg>
+   Spray<span>Comply</span>
+  </a>
+  <div class="nav-links">
+   <a href="index.html">Home</a>
+   <a href="about.html">About</a>
+   <a href="features.html">Features</a>
+   <a href="how-it-works.html" class="active">How It Works</a>
+   <a href="pricing.html">Pricing</a>
+   <a href="reviews.html">Reviews</a>
+   <a href="contact.html">Contact</a>
+   <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Start Free Trial</a>
+  </div>
+  <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+   <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+   <svg class="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+ </div>
+</nav>
+  </header>
+
+<main id="main-content">
+ <section class="page-hero fade-in">
+  <div class="container text-center">
+   <h1>How Texas Pesticide Spray Logging Works in 3 Simple Steps</h1>
+   <p class="subtitle">A simple 3-step compliance sidecar workflow for Texas licensed applicators in Austin, Dallas, and Houston.</p>
+  </div>
+ </section>
+
+ <section class="section fade-in">
+  <div class="container">
+   <div class="section-header text-center max-w-2xl mx-auto mb-12">
+    <span class="section-label text-emerald-600 font-bold uppercase tracking-wider text-xs bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">Zero Onboarding Friction</span>
+    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Three Steps to Audit Immunity</h2>
+    <p class="text-slate-600 text-base md:text-lg">No multi-week setup seminars or ERP overhauls. Your technicians start logging in minutes with their existing smartphones.</p>
+   </div>
+
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+    <!-- Step 1 -->
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
+     <div class="relative h-56 w-full overflow-hidden bg-slate-100">
+      <img src="service_chemical.jpg" alt="Texas pest control operator configuring EPA chemical registration and applicator licenses in Austin TX" class="w-full h-full object-cover" loading="lazy" width="1200" height="896">
+      <span class="absolute top-4 left-4 bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-full shadow">STEP 01</span>
+     </div>
+     <div class="p-6 flex-1 flex flex-col">
+      <h3 class="text-xl font-bold text-slate-900 mb-2">5-Minute Roster & Vault Setup</h3>
+      <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
+       Enter your TDA applicator license numbers once. Select your active inventory from 40+ preloaded Texas EPA chemical formulations (Termidor SC, Taurus, Bifen I/T) with automatic EPA registration and dilution rates locked in.
+      </p>
+      <div class="pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-emerald-700">
+       <svg class="w-4 h-4 mr-1.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 01-1.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+       EPA Registered #s Pre-Loaded
+      </div>
+     </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
+     <div class="relative h-56 w-full overflow-hidden bg-slate-100">
+      <img src="service_mobile.jpg" alt="Licensed Texas pest control technician completing 25-second mobile spray log with auto NOAA weather in Dallas TX" class="w-full h-full object-cover" loading="lazy" width="1200" height="896">
+      <span class="absolute top-4 left-4 bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-full shadow">STEP 02</span>
+     </div>
+     <div class="p-6 flex-1 flex flex-col">
+      <h3 class="text-xl font-bold text-slate-900 mb-2">25-Second Rapid Field Log</h3>
+      <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
+       Technicians tap on any smartphone or tablet at the job site. SprayComply auto-detects customer GPS, fetches verified NOAA wind direction/speed & temperature, and calculates exact chemical dilution ratios in 3 taps.
+      </p>
+      <div class="pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-emerald-700">
+       <svg class="w-4 h-4 mr-1.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+       Auto-NOAA Weather Fetch
+      </div>
+     </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
+     <div class="relative h-56 w-full overflow-hidden bg-slate-100">
+      <img src="service_audit.jpg" alt="Texas Department of Agriculture compliance auditor reviewing certified Form Q527 pesticide application PDF on tablet" class="w-full h-full object-cover" loading="lazy" width="1200" height="896">
+      <span class="absolute top-4 left-4 bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-full shadow">STEP 03</span>
+     </div>
+     <div class="p-6 flex-1 flex flex-col">
+      <h3 class="text-xl font-bold text-slate-900 mb-2">1-Click TDA Form Q527 Export</h3>
+      <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
+       When a state agriculture inspector calls for a routine audit or unannounced spot check, filter by date range, applicator, or target pest, and instantly generate official certified Form Q527 audit PDFs with zero missing fields.
+      </p>
+      <div class="pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-emerald-700">
+       <svg class="w-4 h-4 mr-1.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 01-1.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+       Certified TDA Compliance PDF
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <!-- Sidecar Callout -->
+   <div class="bg-slate-900 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden shadow-2xl">
+    <div class="relative z-10 max-w-2xl">
+     <span class="inline-block bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-bold px-3 py-1 rounded-full text-xs tracking-wider uppercase mb-4">No Contracts • No Setup Fees</span>
+     <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Keep your existing scheduling & invoicing. Replace only the paperwork headache.</h3>
+     <p class="text-slate-300 text-base mb-6 leading-relaxed">
+      You don't need to migrate your entire business into an expensive $400/month ERP just to have compliant spray logs. SprayComply runs side-by-side with Jobber, QuickBooks, Housecall Pro, or your existing paper routes.
+     </p>
+     <div class="flex flex-col sm:flex-row gap-4">
+      <a href="contact.html" class="btn btn-primary inline-flex items-center justify-center font-bold px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white transition-colors">Start Free Texas Spray Log Trial</a>
+      <a href="tel:+15125550199" class="btn inline-flex items-center justify-center font-bold px-6 py-3 rounded-xl border border-slate-700 text-slate-200 hover:bg-slate-800 transition-colors">
+       <svg class="w-5 h-5 mr-2 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+       Call Austin Compliance Office: (512) 555-0199
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section class="section bg-light fade-in">
+  <div class="container">
+   <div class="section-header text-center">
+    <h2>How We Compare</h2>
+    <p>See why small operators are switching to a dedicated sidecar tool.</p>
+   </div>
+   <div class="table-wrap">
+    <table class="comparison-table">
+     <thead>
+      <tr>
+       <th>Feature</th>
+       <th>SprayComply</th>
+       <th>Paper Logs</th>
+       <th>PestPac</th>
+       <th>GorillaDesk</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>Auto-Weather Fetch</td>
+       <td><svg class="icon-check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+       <td><svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></td>
+       <td><svg class="icon-check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+       <td><svg class="icon-check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+      </tr>
+      <tr>
+       <td>TDA Audit PDF Export</td>
+       <td><svg class="icon-check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+       <td><svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></td>
+       <td>Partial</td>
+       <td>Partial</td>
+      </tr>
+      <tr>
+       <td>Logging Speed</td>
+       <td>25 Seconds</td>
+       <td>5+ Minutes</td>
+       <td>2-3 Minutes</td>
+       <td>1-2 Minutes</td>
+      </tr>
+      <tr>
+       <td>Requires Full ERP Migration</td>
+       <td><svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></td>
+       <td><svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></td>
+       <td><svg class="icon-check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+       <td><svg class="icon-check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </section>
+
+ <section class="section fade-in">
+  <div class="container">
+   <div class="section-header text-center">
+    <h2>Frequently Asked Questions</h2>
+   </div>
+   <div class="faq-list">
+    <div class="faq-item">
+     <h4>Do I need to replace my scheduling software?</h4>
+     <p>Not at all! SprayComply acts as a sidecar. You can continue using your current CRM or scheduling tool while using SprayComply solely for rapid chemical logging and compliance.</p>
+    </div>
+    <div class="faq-item">
+     <h4>What if my technician goes to a rural area without internet?</h4>
+     <p>SprayComply includes an offline mode. Technicians can log sprays without a connection, and the app will automatically sync to the cloud once they return to coverage.</p>
+    </div>
+    <div class="faq-item">
+     <h4>Are the weather reports accurate?</h4>
+     <p>Yes, we use the device's GPS to find the exact location and pull real-time wind speed, temperature, and direction directly from NOAA weather stations.</p>
+    </div>
+    <div class="faq-item">
+     <h4>How long does setup take?</h4>
+     <p>Most operators are set up and logging their first spray within 5 minutes. Since we pre-load Texas EPA chemicals, you just add your team and go.</p>
+    </div>
+    <div class="faq-item">
+     <h4>Will the exported PDF pass a TDA audit?</h4>
+     <p>Yes. Our PDF exports are specifically formatted to mimic the standard TDA Form Q527, containing all required fields for a seamless audit process.</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section class="section cta-banner fade-in">
+  <div class="container text-center" style="background: var(--primary); color: white; padding: 4rem 2rem; border-radius: 1rem;">
+   <h2>Ready for hassle-free compliance?</h2>
+   <p style="margin: 1.5rem 0; font-size: 1.2rem;">Try SprayComply risk-free for 14 days.</p>
+   <a href="contact.html" class="btn" style="background: white; color: var(--primary); padding: 0.75rem 1.5rem; font-weight: bold; border-radius: 0.5rem; text-decoration: none;">Get Started Now</a>
+  </div>
+ </section>
+</main>
+
+<footer class="footer" role="contentinfo">
+ <div class="container">
+  <div class="footer-grid">
+   <div class="footer-brand">
+        <div class="footer-logo">
+     <svg width="30" height="30" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+      <path d="M32 6 C23 16 14 26 14 37 C14 47.5 22 56 32 58 C42 56 50 47.5 50 37 C50 26 41 16 32 6 Z" fill="#0D9488"/>
+      <path d="M22 36 L28.5 42.5 L43 26" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+     </svg>
+     Spray<span>Comply</span>
+    </div>
+    <p>25-second spray logging and audit-ready compliance for US pest control operators. Built in Austin, TX.</p>
+    <div class="footer-social">
+     <a href="https://facebook.com/spraycomply" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+     <a href="https://x.com/spraycomply" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+     <a href="https://linkedin.com/company/spraycomply" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+    </div>
+   </div>
+   <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="features.html">Features</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+   <div><h4>Support</h4><ul class="footer-links"><li><a href="contact.html">Contact Us</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="contact.html">Request a Demo</a></li><li><a href="contact.html">Help Center</a></li></ul></div>
+   <div><h4>Legal</h4><ul class="footer-links"><li><a href="privacy.html">Privacy Policy</a></li><li><a href="refund.html">Refund Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li></ul></div>
+  </div>
+        <div class="footer-bottom">
+        <span>&copy; 2026 SprayComply. All rights reserved. &bull; Designed &amp; Developed by <a href="https://truegridleaf.com" target="_blank" rel="noopener noreferrer" style="color: #5EEAD4; text-decoration: underline;">Truegridleaf.com</a></span>
+        <span><a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="refund.html">Refunds</a></span>
+      </div>
+ </div>
+</footer>
+  <!-- Floating Attribution Badge -->
+  <a href="https://truegridleaf.com" target="_blank" rel="noopener noreferrer" class="floating-agency-badge" aria-label="Website designed and developed by Truegridleaf.com">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg>
+    <span>Website by Truegridleaf.com</span>
+  </a>
+  <script src="main.js"></script>
+</body>
+</html>
